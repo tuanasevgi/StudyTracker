@@ -1,5 +1,24 @@
-# StudyTracker
+# Study Tracker
 
+A simple and user-friendly application to track study hours.
 
-This is a simple web app to track study hours.  
-You can enter the number of hours studied and keep record of your progress.
+## Features
+
+- Easily add your study hours.
+- View the total study hours in real-time.
+- Simple and clean user interface.
+
+## How to Use
+
+1. Enter the number of hours you studied.
+2. Click the "Add Hours" button.
+3. See your total study hours displayed on the screen.
+
+## Technologies Used
+
+- HTML
+- CSS
+- JavaScript
+
+---
+
