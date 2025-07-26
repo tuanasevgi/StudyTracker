@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Study Tracker</title>
+   <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+       <h1>STUDY TRACKER</h1>
+       <input type="number" id="hoursInput" placeholder="Enter Hours Studied" />
+       <button id="addBtn">Add Hours</button>
+       <p>Total Hours Studied: <span id="totalHours">0</span></p>
+    </div>
+
+    <script>
+      let total = 0;
+
+      const input = document.getElementById('hoursInput');
+      const addBtn = document.getElementById('addBtn');
+      const totalHours = document.getElementById('totalHours');
+
+      addBtn.addEventListener('click', () => {
+         const hours = Number(input.value);
+         if (hours > 0) {
+           total += hours;
+           totalHours.textContent = total;
+           input.value = '';
+         } else {
+           alert('Please enter a positive number');
+         }
+      });
+    </script>
+</body>
+</html>
